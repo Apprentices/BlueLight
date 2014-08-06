@@ -7,13 +7,18 @@
 //
 
 #import "BLAppDelegate.h"
+#import "BLWelcomeView.h"
 
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    BLWelcomeView *welcomeView = [[BLWelcomeView alloc] initWithNibName:@"BLWelcomeView" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:welcomeView];
+    self.window.rootViewController = self.navController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
