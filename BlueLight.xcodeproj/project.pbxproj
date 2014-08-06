@@ -1,508 +1,1172 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		37EA4E3C6D9A4D98A4FA311B /* libPods-BlueLightTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58970506CC044D25ADF38115 /* libPods-BlueLightTests.a */; };
-		702F73571992B16F0045431A /* BLWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 702F73551992B16F0045431A /* BLWelcomeView.m */; };
-		702F73581992B16F0045431A /* BLWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702F73561992B16F0045431A /* BLWelcomeView.xib */; };
-		708853C91992AE5900AB597B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853C81992AE5900AB597B /* Foundation.framework */; };
-		708853CB1992AE5900AB597B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853CA1992AE5900AB597B /* CoreGraphics.framework */; };
-		708853CD1992AE5900AB597B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853CC1992AE5900AB597B /* UIKit.framework */; };
-		708853D31992AE5900AB597B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 708853D11992AE5900AB597B /* InfoPlist.strings */; };
-		708853D51992AE5900AB597B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 708853D41992AE5900AB597B /* main.m */; };
-		708853D91992AE5900AB597B /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 708853D81992AE5900AB597B /* BLAppDelegate.m */; };
-		708853DB1992AE5900AB597B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708853DA1992AE5900AB597B /* Images.xcassets */; };
-		708853E21992AE5900AB597B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853E11992AE5900AB597B /* XCTest.framework */; };
-		708853E31992AE5900AB597B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853C81992AE5900AB597B /* Foundation.framework */; };
-		708853E41992AE5900AB597B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853CC1992AE5900AB597B /* UIKit.framework */; };
-		708853EC1992AE5900AB597B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 708853EA1992AE5900AB597B /* InfoPlist.strings */; };
-		708853EE1992AE5900AB597B /* BlueLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 708853ED1992AE5900AB597B /* BlueLightTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		708853E51992AE5900AB597B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 708853BD1992AE5900AB597B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 708853C41992AE5900AB597B;
-			remoteInfo = BlueLight;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		58970506CC044D25ADF38115 /* libPods-BlueLightTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlueLightTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		702F73541992B16F0045431A /* BLWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLWelcomeView.h; sourceTree = "<group>"; };
-		702F73551992B16F0045431A /* BLWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWelcomeView.m; sourceTree = "<group>"; };
-		702F73561992B16F0045431A /* BLWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLWelcomeView.xib; sourceTree = "<group>"; };
-		708853C51992AE5900AB597B /* BlueLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		708853C81992AE5900AB597B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		708853CA1992AE5900AB597B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		708853CC1992AE5900AB597B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		708853D01992AE5900AB597B /* BlueLight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueLight-Info.plist"; sourceTree = "<group>"; };
-		708853D21992AE5900AB597B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		708853D41992AE5900AB597B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		708853D61992AE5900AB597B /* BlueLight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueLight-Prefix.pch"; sourceTree = "<group>"; };
-		708853D71992AE5900AB597B /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
-		708853D81992AE5900AB597B /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
-		708853DA1992AE5900AB597B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		708853E01992AE5900AB597B /* BlueLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		708853E11992AE5900AB597B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		708853E91992AE5900AB597B /* BlueLightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueLightTests-Info.plist"; sourceTree = "<group>"; };
-		708853EB1992AE5900AB597B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		708853ED1992AE5900AB597B /* BlueLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueLightTests.m; sourceTree = "<group>"; };
-		8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueLightTests.xcconfig"; path = "Pods/Pods-BlueLightTests.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		708853C21992AE5900AB597B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708853CB1992AE5900AB597B /* CoreGraphics.framework in Frameworks */,
-				708853CD1992AE5900AB597B /* UIKit.framework in Frameworks */,
-				708853C91992AE5900AB597B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708853DD1992AE5900AB597B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708853E21992AE5900AB597B /* XCTest.framework in Frameworks */,
-				708853E41992AE5900AB597B /* UIKit.framework in Frameworks */,
-				708853E31992AE5900AB597B /* Foundation.framework in Frameworks */,
-				37EA4E3C6D9A4D98A4FA311B /* libPods-BlueLightTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		708853BC1992AE5900AB597B = {
-			isa = PBXGroup;
-			children = (
-				708853CE1992AE5900AB597B /* BlueLight */,
-				708853E71992AE5900AB597B /* BlueLightTests */,
-				708853C71992AE5900AB597B /* Frameworks */,
-				708853C61992AE5900AB597B /* Products */,
-				8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		708853C61992AE5900AB597B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				708853C51992AE5900AB597B /* BlueLight.app */,
-				708853E01992AE5900AB597B /* BlueLightTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		708853C71992AE5900AB597B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				708853C81992AE5900AB597B /* Foundation.framework */,
-				708853CA1992AE5900AB597B /* CoreGraphics.framework */,
-				708853CC1992AE5900AB597B /* UIKit.framework */,
-				708853E11992AE5900AB597B /* XCTest.framework */,
-				58970506CC044D25ADF38115 /* libPods-BlueLightTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		708853CE1992AE5900AB597B /* BlueLight */ = {
-			isa = PBXGroup;
-			children = (
-				708853D71992AE5900AB597B /* BLAppDelegate.h */,
-				708853D81992AE5900AB597B /* BLAppDelegate.m */,
-				702F73541992B16F0045431A /* BLWelcomeView.h */,
-				702F73551992B16F0045431A /* BLWelcomeView.m */,
-				702F73561992B16F0045431A /* BLWelcomeView.xib */,
-				708853DA1992AE5900AB597B /* Images.xcassets */,
-				708853CF1992AE5900AB597B /* Supporting Files */,
-			);
-			path = BlueLight;
-			sourceTree = "<group>";
-		};
-		708853CF1992AE5900AB597B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				708853D01992AE5900AB597B /* BlueLight-Info.plist */,
-				708853D11992AE5900AB597B /* InfoPlist.strings */,
-				708853D41992AE5900AB597B /* main.m */,
-				708853D61992AE5900AB597B /* BlueLight-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		708853E71992AE5900AB597B /* BlueLightTests */ = {
-			isa = PBXGroup;
-			children = (
-				708853ED1992AE5900AB597B /* BlueLightTests.m */,
-				708853E81992AE5900AB597B /* Supporting Files */,
-			);
-			path = BlueLightTests;
-			sourceTree = "<group>";
-		};
-		708853E81992AE5900AB597B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				708853E91992AE5900AB597B /* BlueLightTests-Info.plist */,
-				708853EA1992AE5900AB597B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		708853C41992AE5900AB597B /* BlueLight */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 708853F11992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLight" */;
-			buildPhases = (
-				708853C11992AE5900AB597B /* Sources */,
-				708853C21992AE5900AB597B /* Frameworks */,
-				708853C31992AE5900AB597B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BlueLight;
-			productName = BlueLight;
-			productReference = 708853C51992AE5900AB597B /* BlueLight.app */;
-			productType = "com.apple.product-type.application";
-		};
-		708853DF1992AE5900AB597B /* BlueLightTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 708853F41992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLightTests" */;
-			buildPhases = (
-				361260A5E912466A8A82EAB1 /* Check Pods Manifest.lock */,
-				708853DC1992AE5900AB597B /* Sources */,
-				708853DD1992AE5900AB597B /* Frameworks */,
-				708853DE1992AE5900AB597B /* Resources */,
-				9F6B18209DA2479084A2218B /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				708853E61992AE5900AB597B /* PBXTargetDependency */,
-			);
-			name = BlueLightTests;
-			productName = BlueLightTests;
-			productReference = 708853E01992AE5900AB597B /* BlueLightTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		708853BD1992AE5900AB597B /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = BL;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Detroit Labs";
-				TargetAttributes = {
-					708853DF1992AE5900AB597B = {
-						TestTargetID = 708853C41992AE5900AB597B;
-					};
-				};
-			};
-			buildConfigurationList = 708853C01992AE5900AB597B /* Build configuration list for PBXProject "BlueLight" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 708853BC1992AE5900AB597B;
-			productRefGroup = 708853C61992AE5900AB597B /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				708853C41992AE5900AB597B /* BlueLight */,
-				708853DF1992AE5900AB597B /* BlueLightTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		708853C31992AE5900AB597B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				702F73581992B16F0045431A /* BLWelcomeView.xib in Resources */,
-				708853D31992AE5900AB597B /* InfoPlist.strings in Resources */,
-				708853DB1992AE5900AB597B /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708853DE1992AE5900AB597B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708853EC1992AE5900AB597B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		361260A5E912466A8A82EAB1 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9F6B18209DA2479084A2218B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-BlueLightTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		708853C11992AE5900AB597B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				702F73571992B16F0045431A /* BLWelcomeView.m in Sources */,
-				708853D91992AE5900AB597B /* BLAppDelegate.m in Sources */,
-				708853D51992AE5900AB597B /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		708853DC1992AE5900AB597B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				708853EE1992AE5900AB597B /* BlueLightTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		708853E61992AE5900AB597B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 708853C41992AE5900AB597B /* BlueLight */;
-			targetProxy = 708853E51992AE5900AB597B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		708853D11992AE5900AB597B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				708853D21992AE5900AB597B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		708853EA1992AE5900AB597B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				708853EB1992AE5900AB597B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		708853EF1992AE5900AB597B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		708853F01992AE5900AB597B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		708853F21992AE5900AB597B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
-				INFOPLIST_FILE = "BlueLight/BlueLight-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		708853F31992AE5900AB597B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
-				INFOPLIST_FILE = "BlueLight/BlueLight-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		708853F51992AE5900AB597B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueLight.app/BlueLight";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "BlueLightTests/BlueLightTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		708853F61992AE5900AB597B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueLight.app/BlueLight";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
-				INFOPLIST_FILE = "BlueLightTests/BlueLightTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		708853C01992AE5900AB597B /* Build configuration list for PBXProject "BlueLight" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				708853EF1992AE5900AB597B /* Debug */,
-				708853F01992AE5900AB597B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		708853F11992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLight" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				708853F21992AE5900AB597B /* Debug */,
-				708853F31992AE5900AB597B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		708853F41992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLightTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				708853F51992AE5900AB597B /* Debug */,
-				708853F61992AE5900AB597B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 708853BD1992AE5900AB597B /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1BD531E812694BF0AAB47132</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-BlueLight.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>3417971DA45F4B1783CBA7D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1BD531E812694BF0AAB47132</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>361260A5E912466A8A82EAB1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>37EA4E3C6D9A4D98A4FA311B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>58970506CC044D25ADF38115</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>58970506CC044D25ADF38115</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-BlueLightTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6ADA79B1A41A49F5913F7084</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-BlueLight-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>702F73541992B16F0045431A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BLWelcomeView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>702F73551992B16F0045431A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BLWelcomeView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>702F73561992B16F0045431A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>BLWelcomeView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>702F73571992B16F0045431A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>702F73551992B16F0045431A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>702F73581992B16F0045431A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>702F73561992B16F0045431A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853BC1992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853CE1992AE5900AB597B</string>
+				<string>708853E71992AE5900AB597B</string>
+				<string>708853C71992AE5900AB597B</string>
+				<string>708853C61992AE5900AB597B</string>
+				<string>8B8E4B70775A410B87EEDE27</string>
+				<string>DC88812CE51046E28712B837</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853BD1992AE5900AB597B</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>BL</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Detroit Labs</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>708853DF1992AE5900AB597B</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>708853C41992AE5900AB597B</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>708853C01992AE5900AB597B</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>708853BC1992AE5900AB597B</string>
+			<key>productRefGroup</key>
+			<string>708853C61992AE5900AB597B</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>708853C41992AE5900AB597B</string>
+				<string>708853DF1992AE5900AB597B</string>
+			</array>
+		</dict>
+		<key>708853C01992AE5900AB597B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>708853EF1992AE5900AB597B</string>
+				<string>708853F01992AE5900AB597B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>708853C11992AE5900AB597B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>702F73571992B16F0045431A</string>
+				<string>708853D91992AE5900AB597B</string>
+				<string>708853D51992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>708853C21992AE5900AB597B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>708853CB1992AE5900AB597B</string>
+				<string>708853CD1992AE5900AB597B</string>
+				<string>708853C91992AE5900AB597B</string>
+				<string>3417971DA45F4B1783CBA7D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>708853C31992AE5900AB597B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>702F73581992B16F0045431A</string>
+				<string>708853D31992AE5900AB597B</string>
+				<string>708853DB1992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>708853C41992AE5900AB597B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>708853F11992AE5900AB597B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D4B7B571EF9E4837863D0293</string>
+				<string>708853C11992AE5900AB597B</string>
+				<string>708853C21992AE5900AB597B</string>
+				<string>708853C31992AE5900AB597B</string>
+				<string>6ADA79B1A41A49F5913F7084</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BlueLight</string>
+			<key>productName</key>
+			<string>BlueLight</string>
+			<key>productReference</key>
+			<string>708853C51992AE5900AB597B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>708853C51992AE5900AB597B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BlueLight.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>708853C61992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853C51992AE5900AB597B</string>
+				<string>708853E01992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853C71992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853C81992AE5900AB597B</string>
+				<string>708853CA1992AE5900AB597B</string>
+				<string>708853CC1992AE5900AB597B</string>
+				<string>708853E11992AE5900AB597B</string>
+				<string>58970506CC044D25ADF38115</string>
+				<string>1BD531E812694BF0AAB47132</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853C81992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>708853C91992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853C81992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853CA1992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>708853CB1992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853CA1992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853CC1992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>708853CD1992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853CC1992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853CE1992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853D71992AE5900AB597B</string>
+				<string>708853D81992AE5900AB597B</string>
+				<string>702F73541992B16F0045431A</string>
+				<string>702F73551992B16F0045431A</string>
+				<string>702F73561992B16F0045431A</string>
+				<string>708853DA1992AE5900AB597B</string>
+				<string>708853CF1992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BlueLight</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853CF1992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853D01992AE5900AB597B</string>
+				<string>708853D11992AE5900AB597B</string>
+				<string>708853D41992AE5900AB597B</string>
+				<string>708853D61992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D01992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>BlueLight-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D11992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853D21992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D21992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D31992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853D11992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853D41992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D51992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853D41992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853D61992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BlueLight-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D71992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BLAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D81992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BLAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853D91992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853D81992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853DA1992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853DB1992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853DA1992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853DC1992AE5900AB597B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>708853EE1992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>708853DD1992AE5900AB597B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>708853E21992AE5900AB597B</string>
+				<string>708853E41992AE5900AB597B</string>
+				<string>708853E31992AE5900AB597B</string>
+				<string>37EA4E3C6D9A4D98A4FA311B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>708853DE1992AE5900AB597B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>708853EC1992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>708853DF1992AE5900AB597B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>708853F41992AE5900AB597B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>361260A5E912466A8A82EAB1</string>
+				<string>708853DC1992AE5900AB597B</string>
+				<string>708853DD1992AE5900AB597B</string>
+				<string>708853DE1992AE5900AB597B</string>
+				<string>9F6B18209DA2479084A2218B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>708853E61992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>BlueLightTests</string>
+			<key>productName</key>
+			<string>BlueLightTests</string>
+			<key>productReference</key>
+			<string>708853E01992AE5900AB597B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>708853E01992AE5900AB597B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>BlueLightTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>708853E11992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>708853E21992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853E11992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853E31992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853C81992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853E41992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853CC1992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853E51992AE5900AB597B</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>708853BD1992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>708853C41992AE5900AB597B</string>
+			<key>remoteInfo</key>
+			<string>BlueLight</string>
+		</dict>
+		<key>708853E61992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>708853C41992AE5900AB597B</string>
+			<key>targetProxy</key>
+			<string>708853E51992AE5900AB597B</string>
+		</dict>
+		<key>708853E71992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853ED1992AE5900AB597B</string>
+				<string>708853E81992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BlueLightTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853E81992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853E91992AE5900AB597B</string>
+				<string>708853EA1992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853E91992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>BlueLightTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853EA1992AE5900AB597B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>708853EB1992AE5900AB597B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853EB1992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853EC1992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853EA1992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853ED1992AE5900AB597B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BlueLightTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>708853EE1992AE5900AB597B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>708853ED1992AE5900AB597B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>708853EF1992AE5900AB597B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>708853F01992AE5900AB597B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>708853F11992AE5900AB597B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>708853F21992AE5900AB597B</string>
+				<string>708853F31992AE5900AB597B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>708853F21992AE5900AB597B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DC88812CE51046E28712B837</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BlueLight/BlueLight-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BlueLight/BlueLight-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>708853F31992AE5900AB597B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DC88812CE51046E28712B837</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BlueLight/BlueLight-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BlueLight/BlueLight-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>708853F41992AE5900AB597B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>708853F51992AE5900AB597B</string>
+				<string>708853F61992AE5900AB597B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>708853F51992AE5900AB597B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8B8E4B70775A410B87EEDE27</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BlueLight.app/BlueLight</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BlueLight/BlueLight-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>BlueLightTests/BlueLightTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>708853F61992AE5900AB597B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8B8E4B70775A410B87EEDE27</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/BlueLight.app/BlueLight</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>BlueLight/BlueLight-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>BlueLightTests/BlueLightTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>8B8E4B70775A410B87EEDE27</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BlueLightTests.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-BlueLightTests.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9F6B18209DA2479084A2218B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-BlueLightTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D4B7B571EF9E4837863D0293</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DC88812CE51046E28712B837</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-BlueLight.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-BlueLight.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>708853BD1992AE5900AB597B</string>
+</dict>
+</plist>
