@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>74EE4E64-EFBB-47D1-B428-6212770B678D</string>
+	<string>7CEF0F4B-9D62-4632-B3AE-32FE42B0CA1B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BlueLight</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A4AAF36A-4EDF-4A5B-8BE5-5A06D488E426</key>
-		<string>ssh://github.com/ThisIsTaylor/BlueLight.git</string>
+		<key>3E7F1E05-AB45-443D-B439-ED701ADDABFE</key>
+		<string>ssh://github.com/AmyLeikert/BlueLight.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BlueLight/BlueLight.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A4AAF36A-4EDF-4A5B-8BE5-5A06D488E426</key>
+		<key>3E7F1E05-AB45-443D-B439-ED701ADDABFE</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/ThisIsTaylor/BlueLight.git</string>
+	<string>ssh://github.com/AmyLeikert/BlueLight.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A4AAF36A-4EDF-4A5B-8BE5-5A06D488E426</string>
+	<string>3E7F1E05-AB45-443D-B439-ED701ADDABFE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A4AAF36A-4EDF-4A5B-8BE5-5A06D488E426</string>
+			<string>3E7F1E05-AB45-443D-B439-ED701ADDABFE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BlueLight</string>
 		</dict>
