@@ -8,11 +8,17 @@
 
 #import "BLAppDelegate.h"
 #import "BLWelcomeView.h"
+#import <Parse/Parse.h>
 
 @implementation BLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"VEgz4plyPvW8wteXW4wFc26ltjmMiAGyLoNskpVs"
+                  clientKey:@"o5Sp1PkwjPHArLFJNmKszwt24vayFkIHJRWN0Un6"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     BLWelcomeView *welcomeView = [[BLWelcomeView alloc] initWithNibName:@"BLWelcomeView" bundle:nil];
@@ -21,6 +27,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
