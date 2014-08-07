@@ -7,6 +7,7 @@
 //
 
 #import "BLSignInViewController.h"
+#import "BLMainViewController.h"
 
 @interface BLSignInViewController ()
 
@@ -26,7 +27,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    if (![PFUser currentUser]) {
+        
+        PFLogInViewController *login = [[PFLogInViewController alloc] init];
+        login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton;
+        login.delegate = self;
+        [self presentViewController:login animated:NO
+                         completion:NULL];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +43,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

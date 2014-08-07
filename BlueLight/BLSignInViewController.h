@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface BLSignInViewController : UIViewController
+@interface BLSignInViewController : UIViewController <PFLogInViewControllerDelegate>
 
 @end

@@ -140,9 +140,7 @@
 			children = (
 				708853D71992AE5900AB597B /* BLAppDelegate.h */,
 				708853D81992AE5900AB597B /* BLAppDelegate.m */,
-				702F73541992B16F0045431A /* BLWelcomeView.h */,
-				702F73551992B16F0045431A /* BLWelcomeView.m */,
-				702F73561992B16F0045431A /* BLWelcomeView.xib */,
+				70A507B119941C2A002753EF /* Welcome View */,
 				708FFDA31993C61E006F77F6 /* Login Views */,
 				708853DA1992AE5900AB597B /* Images.xcassets */,
 				708853CF1992AE5900AB597B /* Supporting Files */,
@@ -190,6 +188,16 @@
 				708FFDA01993C611006F77F6 /* BLSignInViewController.xib */,
 			);
 			name = "Login Views";
+			sourceTree = "<group>";
+		};
+		70A507B119941C2A002753EF /* Welcome View */ = {
+			isa = PBXGroup;
+			children = (
+				702F73541992B16F0045431A /* BLWelcomeView.h */,
+				702F73551992B16F0045431A /* BLWelcomeView.m */,
+				702F73561992B16F0045431A /* BLWelcomeView.xib */,
+			);
+			name = "Welcome View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
