@@ -28,6 +28,8 @@
 		708FFDA11993C611006F77F6 /* BLSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708FFD9F1993C611006F77F6 /* BLSignInViewController.m */; };
 		708FFDA21993C611006F77F6 /* BLSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 708FFDA01993C611006F77F6 /* BLSignInViewController.xib */; };
 		708FFDA51993CBB9006F77F6 /* BLWelcomeViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 708FFDA41993CBB9006F77F6 /* BLWelcomeViewSpec.m */; };
+		70A507B619941F4D002753EF /* BLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A507B419941F4D002753EF /* BLMainViewController.m */; };
+		70A507B719941F4D002753EF /* BLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70A507B519941F4D002753EF /* BLMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 		708FFD9F1993C611006F77F6 /* BLSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSignInViewController.m; sourceTree = "<group>"; };
 		708FFDA01993C611006F77F6 /* BLSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSignInViewController.xib; sourceTree = "<group>"; };
 		708FFDA41993CBB9006F77F6 /* BLWelcomeViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWelcomeViewSpec.m; sourceTree = "<group>"; };
+		70A507B319941F4D002753EF /* BLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainViewController.h; sourceTree = "<group>"; };
+		70A507B419941F4D002753EF /* BLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainViewController.m; sourceTree = "<group>"; };
+		70A507B519941F4D002753EF /* BLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLMainViewController.xib; sourceTree = "<group>"; };
 		8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueLightTests.xcconfig"; path = "Pods/Pods-BlueLightTests.xcconfig"; sourceTree = "<group>"; };
 		DC88812CE51046E28712B837 /* Pods-BlueLight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueLight.xcconfig"; path = "Pods/Pods-BlueLight.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +146,7 @@
 				708853D71992AE5900AB597B /* BLAppDelegate.h */,
 				708853D81992AE5900AB597B /* BLAppDelegate.m */,
 				70A507B119941C2A002753EF /* Welcome View */,
+				70A507B219941F38002753EF /* Main View */,
 				708FFDA31993C61E006F77F6 /* Login Views */,
 				708853DA1992AE5900AB597B /* Images.xcassets */,
 				708853CF1992AE5900AB597B /* Supporting Files */,
@@ -198,6 +204,16 @@
 				702F73561992B16F0045431A /* BLWelcomeView.xib */,
 			);
 			name = "Welcome View";
+			sourceTree = "<group>";
+		};
+		70A507B219941F38002753EF /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				70A507B319941F4D002753EF /* BLMainViewController.h */,
+				70A507B419941F4D002753EF /* BLMainViewController.m */,
+				70A507B519941F4D002753EF /* BLMainViewController.xib */,
+			);
+			name = "Main View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +299,7 @@
 				702F73581992B16F0045431A /* BLWelcomeView.xib in Resources */,
 				708853D31992AE5900AB597B /* InfoPlist.strings in Resources */,
 				708FFDA21993C611006F77F6 /* BLSignInViewController.xib in Resources */,
+				70A507B719941F4D002753EF /* BLMainViewController.xib in Resources */,
 				708FFD9D1993C5D7006F77F6 /* BLSignUpViewController.xib in Resources */,
 				708853DB1992AE5900AB597B /* Images.xcassets in Resources */,
 			);
@@ -369,6 +386,7 @@
 				702F73571992B16F0045431A /* BLWelcomeView.m in Sources */,
 				708FFDA11993C611006F77F6 /* BLSignInViewController.m in Sources */,
 				708853D91992AE5900AB597B /* BLAppDelegate.m in Sources */,
+				70A507B619941F4D002753EF /* BLMainViewController.m in Sources */,
 				708FFD9C1993C5D7006F77F6 /* BLSignUpViewController.m in Sources */,
 				708853D51992AE5900AB597B /* main.m in Sources */,
 			);

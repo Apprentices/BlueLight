@@ -44,5 +44,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)userDidLogIn {
+    [PFUser logInWithUsernameInBackground:@"myname" password:@"mypass"
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            
+                                            BLMainViewController *mainViewController = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
+                                            [self.navigationController pushViewController:mainViewController animated:YES];
+                                        }
+                                    }];
+}
+
+
 
 @end
