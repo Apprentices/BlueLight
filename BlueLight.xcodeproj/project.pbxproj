@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3417971DA45F4B1783CBA7D7 /* libPods-BlueLight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD531E812694BF0AAB47132 /* libPods-BlueLight.a */; };
+		37EA4E3C6D9A4D98A4FA311B /* libPods-BlueLightTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58970506CC044D25ADF38115 /* libPods-BlueLightTests.a */; };
+		702F73571992B16F0045431A /* BLWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 702F73551992B16F0045431A /* BLWelcomeView.m */; };
+		702F73581992B16F0045431A /* BLWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702F73561992B16F0045431A /* BLWelcomeView.xib */; };
+		703ED5F41992B58300CD7C81 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703ED5F31992B58300CD7C81 /* Social.framework */; };
+		708853C91992AE5900AB597B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853C81992AE5900AB597B /* Foundation.framework */; };
+		708853CB1992AE5900AB597B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853CA1992AE5900AB597B /* CoreGraphics.framework */; };
+		708853CD1992AE5900AB597B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853CC1992AE5900AB597B /* UIKit.framework */; };
+		708853D31992AE5900AB597B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 708853D11992AE5900AB597B /* InfoPlist.strings */; };
+		708853D51992AE5900AB597B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 708853D41992AE5900AB597B /* main.m */; };
+		708853D91992AE5900AB597B /* BLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 708853D81992AE5900AB597B /* BLAppDelegate.m */; };
+		708853DB1992AE5900AB597B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708853DA1992AE5900AB597B /* Images.xcassets */; };
+		708853E21992AE5900AB597B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853E11992AE5900AB597B /* XCTest.framework */; };
+		708853E31992AE5900AB597B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853C81992AE5900AB597B /* Foundation.framework */; };
+		708853E41992AE5900AB597B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853CC1992AE5900AB597B /* UIKit.framework */; };
+		708853EC1992AE5900AB597B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 708853EA1992AE5900AB597B /* InfoPlist.strings */; };
+		708853EE1992AE5900AB597B /* BlueLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 708853ED1992AE5900AB597B /* BlueLightTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		708853E51992AE5900AB597B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708853BD1992AE5900AB597B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708853C41992AE5900AB597B;
+			remoteInfo = BlueLight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BD531E812694BF0AAB47132 /* libPods-BlueLight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlueLight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58970506CC044D25ADF38115 /* libPods-BlueLightTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlueLightTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		702F73541992B16F0045431A /* BLWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLWelcomeView.h; sourceTree = "<group>"; };
+		702F73551992B16F0045431A /* BLWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWelcomeView.m; sourceTree = "<group>"; };
+		702F73561992B16F0045431A /* BLWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLWelcomeView.xib; sourceTree = "<group>"; };
+		703ED5F31992B58300CD7C81 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		708853C51992AE5900AB597B /* BlueLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		708853C81992AE5900AB597B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		708853CA1992AE5900AB597B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		708853CC1992AE5900AB597B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		708853D01992AE5900AB597B /* BlueLight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueLight-Info.plist"; sourceTree = "<group>"; };
+		708853D21992AE5900AB597B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		708853D41992AE5900AB597B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		708853D61992AE5900AB597B /* BlueLight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueLight-Prefix.pch"; sourceTree = "<group>"; };
+		708853D71992AE5900AB597B /* BLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLAppDelegate.h; sourceTree = "<group>"; };
+		708853D81992AE5900AB597B /* BLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLAppDelegate.m; sourceTree = "<group>"; };
+		708853DA1992AE5900AB597B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		708853E01992AE5900AB597B /* BlueLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		708853E11992AE5900AB597B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		708853E91992AE5900AB597B /* BlueLightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueLightTests-Info.plist"; sourceTree = "<group>"; };
+		708853EB1992AE5900AB597B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		708853ED1992AE5900AB597B /* BlueLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueLightTests.m; sourceTree = "<group>"; };
+		8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueLightTests.xcconfig"; path = "Pods/Pods-BlueLightTests.xcconfig"; sourceTree = "<group>"; };
+		DC88812CE51046E28712B837 /* Pods-BlueLight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueLight.xcconfig"; path = "Pods/Pods-BlueLight.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		708853C21992AE5900AB597B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703ED5F41992B58300CD7C81 /* Social.framework in Frameworks */,
+				708853CB1992AE5900AB597B /* CoreGraphics.framework in Frameworks */,
+				708853CD1992AE5900AB597B /* UIKit.framework in Frameworks */,
+				708853C91992AE5900AB597B /* Foundation.framework in Frameworks */,
+				3417971DA45F4B1783CBA7D7 /* libPods-BlueLight.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708853DD1992AE5900AB597B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708853E21992AE5900AB597B /* XCTest.framework in Frameworks */,
+				708853E41992AE5900AB597B /* UIKit.framework in Frameworks */,
+				708853E31992AE5900AB597B /* Foundation.framework in Frameworks */,
+				37EA4E3C6D9A4D98A4FA311B /* libPods-BlueLightTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		708853BC1992AE5900AB597B = {
+			isa = PBXGroup;
+			children = (
+				708853CE1992AE5900AB597B /* BlueLight */,
+				708853E71992AE5900AB597B /* BlueLightTests */,
+				708853C71992AE5900AB597B /* Frameworks */,
+				708853C61992AE5900AB597B /* Products */,
+				8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */,
+				DC88812CE51046E28712B837 /* Pods-BlueLight.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		708853C61992AE5900AB597B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708853C51992AE5900AB597B /* BlueLight.app */,
+				708853E01992AE5900AB597B /* BlueLightTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		708853C71992AE5900AB597B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				703ED5F31992B58300CD7C81 /* Social.framework */,
+				708853C81992AE5900AB597B /* Foundation.framework */,
+				708853CA1992AE5900AB597B /* CoreGraphics.framework */,
+				708853CC1992AE5900AB597B /* UIKit.framework */,
+				708853E11992AE5900AB597B /* XCTest.framework */,
+				58970506CC044D25ADF38115 /* libPods-BlueLightTests.a */,
+				1BD531E812694BF0AAB47132 /* libPods-BlueLight.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		708853CE1992AE5900AB597B /* BlueLight */ = {
+			isa = PBXGroup;
+			children = (
+				708853D71992AE5900AB597B /* BLAppDelegate.h */,
+				708853D81992AE5900AB597B /* BLAppDelegate.m */,
+				702F73541992B16F0045431A /* BLWelcomeView.h */,
+				702F73551992B16F0045431A /* BLWelcomeView.m */,
+				702F73561992B16F0045431A /* BLWelcomeView.xib */,
+				708853DA1992AE5900AB597B /* Images.xcassets */,
+				708853CF1992AE5900AB597B /* Supporting Files */,
+			);
+			path = BlueLight;
+			sourceTree = "<group>";
+		};
+		708853CF1992AE5900AB597B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				708853D01992AE5900AB597B /* BlueLight-Info.plist */,
+				708853D11992AE5900AB597B /* InfoPlist.strings */,
+				708853D41992AE5900AB597B /* main.m */,
+				708853D61992AE5900AB597B /* BlueLight-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		708853E71992AE5900AB597B /* BlueLightTests */ = {
+			isa = PBXGroup;
+			children = (
+				708853ED1992AE5900AB597B /* BlueLightTests.m */,
+				708853E81992AE5900AB597B /* Supporting Files */,
+			);
+			path = BlueLightTests;
+			sourceTree = "<group>";
+		};
+		708853E81992AE5900AB597B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				708853E91992AE5900AB597B /* BlueLightTests-Info.plist */,
+				708853EA1992AE5900AB597B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		708853C41992AE5900AB597B /* BlueLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708853F11992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLight" */;
+			buildPhases = (
+				D4B7B571EF9E4837863D0293 /* Check Pods Manifest.lock */,
+				708853C11992AE5900AB597B /* Sources */,
+				708853C21992AE5900AB597B /* Frameworks */,
+				708853C31992AE5900AB597B /* Resources */,
+				6ADA79B1A41A49F5913F7084 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueLight;
+			productName = BlueLight;
+			productReference = 708853C51992AE5900AB597B /* BlueLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		708853DF1992AE5900AB597B /* BlueLightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708853F41992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLightTests" */;
+			buildPhases = (
+				361260A5E912466A8A82EAB1 /* Check Pods Manifest.lock */,
+				708853DC1992AE5900AB597B /* Sources */,
+				708853DD1992AE5900AB597B /* Frameworks */,
+				708853DE1992AE5900AB597B /* Resources */,
+				9F6B18209DA2479084A2218B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				708853E61992AE5900AB597B /* PBXTargetDependency */,
+			);
+			name = BlueLightTests;
+			productName = BlueLightTests;
+			productReference = 708853E01992AE5900AB597B /* BlueLightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		708853BD1992AE5900AB597B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Detroit Labs";
+				TargetAttributes = {
+					708853DF1992AE5900AB597B = {
+						TestTargetID = 708853C41992AE5900AB597B;
+					};
+				};
+			};
+			buildConfigurationList = 708853C01992AE5900AB597B /* Build configuration list for PBXProject "BlueLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 708853BC1992AE5900AB597B;
+			productRefGroup = 708853C61992AE5900AB597B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				708853C41992AE5900AB597B /* BlueLight */,
+				708853DF1992AE5900AB597B /* BlueLightTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		708853C31992AE5900AB597B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702F73581992B16F0045431A /* BLWelcomeView.xib in Resources */,
+				708853D31992AE5900AB597B /* InfoPlist.strings in Resources */,
+				708853DB1992AE5900AB597B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708853DE1992AE5900AB597B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708853EC1992AE5900AB597B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		361260A5E912466A8A82EAB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6ADA79B1A41A49F5913F7084 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BlueLight-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F6B18209DA2479084A2218B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BlueLightTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B7B571EF9E4837863D0293 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		708853C11992AE5900AB597B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				702F73571992B16F0045431A /* BLWelcomeView.m in Sources */,
+				708853D91992AE5900AB597B /* BLAppDelegate.m in Sources */,
+				708853D51992AE5900AB597B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708853DC1992AE5900AB597B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708853EE1992AE5900AB597B /* BlueLightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		708853E61992AE5900AB597B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 708853C41992AE5900AB597B /* BlueLight */;
+			targetProxy = 708853E51992AE5900AB597B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		708853D11992AE5900AB597B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708853D21992AE5900AB597B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		708853EA1992AE5900AB597B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708853EB1992AE5900AB597B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		708853EF1992AE5900AB597B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		708853F01992AE5900AB597B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		708853F21992AE5900AB597B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC88812CE51046E28712B837 /* Pods-BlueLight.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
+				INFOPLIST_FILE = "BlueLight/BlueLight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		708853F31992AE5900AB597B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC88812CE51046E28712B837 /* Pods-BlueLight.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
+				INFOPLIST_FILE = "BlueLight/BlueLight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		708853F51992AE5900AB597B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueLight.app/BlueLight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlueLightTests/BlueLightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		708853F61992AE5900AB597B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueLight.app/BlueLight";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueLight/BlueLight-Prefix.pch";
+				INFOPLIST_FILE = "BlueLightTests/BlueLightTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		708853C01992AE5900AB597B /* Build configuration list for PBXProject "BlueLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708853EF1992AE5900AB597B /* Debug */,
+				708853F01992AE5900AB597B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708853F11992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708853F21992AE5900AB597B /* Debug */,
+				708853F31992AE5900AB597B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708853F41992AE5900AB597B /* Build configuration list for PBXNativeTarget "BlueLightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708853F51992AE5900AB597B /* Debug */,
+				708853F61992AE5900AB597B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 708853BD1992AE5900AB597B /* Project object */;
+}
