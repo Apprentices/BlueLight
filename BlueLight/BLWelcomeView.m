@@ -7,8 +7,11 @@
 //
 
 #import "BLWelcomeView.h"
+#import "BLSignUpViewController.h"
+#import "BLSignInViewController.h"
 
 @interface BLWelcomeView ()
+
 
 @end
 
@@ -32,6 +35,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)signInButtonPressed:(id)sender {
+    
+    BLSignInViewController *signInViewController = [[BLSignInViewController alloc] initWithNibName:@"BLSignInViewController" bundle:nil];
+    [self.navigationController pushViewController:signInViewController animated:YES];
+    
+}
+
+- (IBAction)signUpButtonPressed:(id)sender {
+    
+    BLSignUpViewController *signUpViewController = [[BLSignUpViewController alloc] initWithNibName:@"BLSignUpViewController" bundle:nil];
+    [self.navigationController pushViewController:signUpViewController animated:YES];
 }
 
 @end

@@ -23,7 +23,11 @@
 		708853E31992AE5900AB597B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853C81992AE5900AB597B /* Foundation.framework */; };
 		708853E41992AE5900AB597B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708853CC1992AE5900AB597B /* UIKit.framework */; };
 		708853EC1992AE5900AB597B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 708853EA1992AE5900AB597B /* InfoPlist.strings */; };
-		708853EE1992AE5900AB597B /* BlueLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 708853ED1992AE5900AB597B /* BlueLightTests.m */; };
+		708FFD9C1993C5D7006F77F6 /* BLSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708FFD9A1993C5D7006F77F6 /* BLSignUpViewController.m */; };
+		708FFD9D1993C5D7006F77F6 /* BLSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 708FFD9B1993C5D7006F77F6 /* BLSignUpViewController.xib */; };
+		708FFDA11993C611006F77F6 /* BLSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 708FFD9F1993C611006F77F6 /* BLSignInViewController.m */; };
+		708FFDA21993C611006F77F6 /* BLSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 708FFDA01993C611006F77F6 /* BLSignInViewController.xib */; };
+		708FFDA51993CBB9006F77F6 /* BLWelcomeViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 708FFDA41993CBB9006F77F6 /* BLWelcomeViewSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +62,13 @@
 		708853E11992AE5900AB597B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		708853E91992AE5900AB597B /* BlueLightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueLightTests-Info.plist"; sourceTree = "<group>"; };
 		708853EB1992AE5900AB597B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		708853ED1992AE5900AB597B /* BlueLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueLightTests.m; sourceTree = "<group>"; };
+		708FFD991993C5D7006F77F6 /* BLSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSignUpViewController.h; sourceTree = "<group>"; };
+		708FFD9A1993C5D7006F77F6 /* BLSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSignUpViewController.m; sourceTree = "<group>"; };
+		708FFD9B1993C5D7006F77F6 /* BLSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSignUpViewController.xib; sourceTree = "<group>"; };
+		708FFD9E1993C611006F77F6 /* BLSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSignInViewController.h; sourceTree = "<group>"; };
+		708FFD9F1993C611006F77F6 /* BLSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSignInViewController.m; sourceTree = "<group>"; };
+		708FFDA01993C611006F77F6 /* BLSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSignInViewController.xib; sourceTree = "<group>"; };
+		708FFDA41993CBB9006F77F6 /* BLWelcomeViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLWelcomeViewSpec.m; sourceTree = "<group>"; };
 		8B8E4B70775A410B87EEDE27 /* Pods-BlueLightTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueLightTests.xcconfig"; path = "Pods/Pods-BlueLightTests.xcconfig"; sourceTree = "<group>"; };
 		DC88812CE51046E28712B837 /* Pods-BlueLight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueLight.xcconfig"; path = "Pods/Pods-BlueLight.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +143,7 @@
 				702F73541992B16F0045431A /* BLWelcomeView.h */,
 				702F73551992B16F0045431A /* BLWelcomeView.m */,
 				702F73561992B16F0045431A /* BLWelcomeView.xib */,
+				708FFDA31993C61E006F77F6 /* Login Views */,
 				708853DA1992AE5900AB597B /* Images.xcassets */,
 				708853CF1992AE5900AB597B /* Supporting Files */,
 			);
@@ -153,7 +164,7 @@
 		708853E71992AE5900AB597B /* BlueLightTests */ = {
 			isa = PBXGroup;
 			children = (
-				708853ED1992AE5900AB597B /* BlueLightTests.m */,
+				708FFDA41993CBB9006F77F6 /* BLWelcomeViewSpec.m */,
 				708853E81992AE5900AB597B /* Supporting Files */,
 			);
 			path = BlueLightTests;
@@ -166,6 +177,19 @@
 				708853EA1992AE5900AB597B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		708FFDA31993C61E006F77F6 /* Login Views */ = {
+			isa = PBXGroup;
+			children = (
+				708FFD991993C5D7006F77F6 /* BLSignUpViewController.h */,
+				708FFD9A1993C5D7006F77F6 /* BLSignUpViewController.m */,
+				708FFD9B1993C5D7006F77F6 /* BLSignUpViewController.xib */,
+				708FFD9E1993C611006F77F6 /* BLSignInViewController.h */,
+				708FFD9F1993C611006F77F6 /* BLSignInViewController.m */,
+				708FFDA01993C611006F77F6 /* BLSignInViewController.xib */,
+			);
+			name = "Login Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +274,8 @@
 			files = (
 				702F73581992B16F0045431A /* BLWelcomeView.xib in Resources */,
 				708853D31992AE5900AB597B /* InfoPlist.strings in Resources */,
+				708FFDA21993C611006F77F6 /* BLSignInViewController.xib in Resources */,
+				708FFD9D1993C5D7006F77F6 /* BLSignUpViewController.xib in Resources */,
 				708853DB1992AE5900AB597B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +359,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				702F73571992B16F0045431A /* BLWelcomeView.m in Sources */,
+				708FFDA11993C611006F77F6 /* BLSignInViewController.m in Sources */,
 				708853D91992AE5900AB597B /* BLAppDelegate.m in Sources */,
+				708FFD9C1993C5D7006F77F6 /* BLSignUpViewController.m in Sources */,
 				708853D51992AE5900AB597B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				708853EE1992AE5900AB597B /* BlueLightTests.m in Sources */,
+				708FFDA51993CBB9006F77F6 /* BLWelcomeViewSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
