@@ -41,14 +41,12 @@
 
 - (IBAction)signInButtonPressed:(id)sender {
     
-    if (![PFUser currentUser]) {
-        
-        PFLogInViewController *login = [[PFLogInViewController alloc] init];
-        login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsDismissButton;
-        login.delegate = self;
-        [self presentViewController:login animated:YES
-                         completion:NULL];
-    }
+    PFLogInViewController *login = [[PFLogInViewController alloc] init];
+    login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsDismissButton;
+    login.delegate = self;
+    [self presentViewController:login animated:YES
+                     completion:NULL];
+    
 }
 
 - (IBAction)signUpButtonPressed:(id)sender {
@@ -59,15 +57,12 @@
 
 #pragma mark - Login Actions
 
-- (void)userDidLogIn {
-    [PFUser logInWithUsernameInBackground:@"myname" password:@"mypass"
-                                    block:^(PFUser *user, NSError *error) {
-                                        if (user) {
-                                            
-                                            BLMainViewController *mainViewController = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
-                                            [self.navigationController pushViewController:mainViewController animated:YES];
-                                        }
-                                    }];
+- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser: (PFUser *)user {
+    
+    BLMainViewController *mainViewController = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
+    [self.navigationController pushViewController:mainViewController animated:YES];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+    NSLog(@"User has signed in");
 }
 
 
