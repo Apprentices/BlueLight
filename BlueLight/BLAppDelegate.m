@@ -9,6 +9,7 @@
 #import "BLAppDelegate.h"
 #import "BLWelcomeView.h"
 #import <Parse/Parse.h>
+#import "BLMainViewController.h"
 
 @implementation BLAppDelegate
 
@@ -20,9 +21,20 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    if (![PFUser currentUser]) {
 
     BLWelcomeView *welcomeView = [[BLWelcomeView alloc] initWithNibName:@"BLWelcomeView" bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:welcomeView];
+    }
+    
+    else {
+    
+    BLMainViewController *mainView = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:mainView];
+        
+    }
+    
     self.window.rootViewController = self.navController;
     
     self.window.backgroundColor = [UIColor whiteColor];
