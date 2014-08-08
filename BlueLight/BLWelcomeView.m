@@ -8,7 +8,7 @@
 
 #import "BLWelcomeView.h"
 #import "BLSignUpViewController.h"
-#import "BLSignInViewController.h"
+#import "BLMainViewController.h"
 
 @interface BLWelcomeView ()
 
@@ -37,11 +37,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Button Actions
+
 - (IBAction)signInButtonPressed:(id)sender {
     
-    BLSignInViewController *signInViewController = [[BLSignInViewController alloc] initWithNibName:@"BLSignInViewController" bundle:nil];
-    [self.navigationController pushViewController:signInViewController animated:YES];
-    
+    if (![PFUser currentUser]) {
+        
+        PFLogInViewController *login = [[PFLogInViewController alloc] init];
+        login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsDismissButton;
+        login.delegate = self;
+        [self presentViewController:login animated:YES
+                         completion:NULL];
+    }
 }
 
 - (IBAction)signUpButtonPressed:(id)sender {
@@ -49,5 +56,19 @@
     BLSignUpViewController *signUpViewController = [[BLSignUpViewController alloc] initWithNibName:@"BLSignUpViewController" bundle:nil];
     [self.navigationController pushViewController:signUpViewController animated:YES];
 }
+
+#pragma mark - Login Actions
+
+- (void)userDidLogIn {
+    [PFUser logInWithUsernameInBackground:@"myname" password:@"mypass"
+                                    block:^(PFUser *user, NSError *error) {
+                                        if (user) {
+                                            
+                                            BLMainViewController *mainViewController = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
+                                            [self.navigationController pushViewController:mainViewController animated:YES];
+                                        }
+                                    }];
+}
+
 
 @end
