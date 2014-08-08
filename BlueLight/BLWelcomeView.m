@@ -12,6 +12,7 @@
 
 @interface BLWelcomeView ()
 
+@property (nonatomic, weak) PFSignUpView *signUpView;
 
 @end
 
@@ -46,8 +47,16 @@
 
 - (IBAction)signUpButtonPressed:(id)sender {
     
-    BLSignUpViewController *signUpViewController = [[BLSignUpViewController alloc] initWithNibName:@"BLSignUpViewController" bundle:nil];
-    [self.navigationController pushViewController:signUpViewController animated:YES];
+    PFSignUpViewController *registration = [[PFSignUpViewController alloc] init];
+    registration.delegate = self;
+    registration.fields = PFSignUpFieldsDefault | PFSignUpFieldsAdditional;
+    
+    //Customize placeholder text for "Additional" to "Phone"
+    registration.signUpView.additionalField.placeholder = @"Phone";
+    registration.signUpView.passwordField.placeholder = @"Password";
+    
+    [self presentViewController:registration animated:YES completion:NULL];
+    
 }
 
 @end
