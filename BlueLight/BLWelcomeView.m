@@ -7,12 +7,12 @@
 //
 
 #import "BLWelcomeView.h"
-#import "BLSignUpViewController.h"
 #import "BLMainViewController.h"
-#import "BLAppDelegate.h"
+
 
 @interface BLWelcomeView ()
 
+@property (nonatomic, weak) PFSignUpView *signUpView;
 
 @end
 
@@ -53,19 +53,37 @@
 
 - (IBAction)signUpButtonPressed:(id)sender {
     
-    BLSignUpViewController *signUpViewController = [[BLSignUpViewController alloc] initWithNibName:@"BLSignUpViewController" bundle:nil];
-    [self.navigationController pushViewController:signUpViewController animated:YES];
+    PFSignUpViewController *registration = [[PFSignUpViewController alloc] init];
+    registration.delegate = self;
+    registration.fields = PFSignUpFieldsDefault | PFSignUpFieldsAdditional;
+    
+    //Customize placeholder text for "Additional" to "Phone"
+    registration.signUpView.additionalField.placeholder = @"Phone";
+    registration.signUpView.passwordField.placeholder = @"Password";
+    
+    [self presentViewController:registration animated:YES completion:NULL];
+    
 }
 
 #pragma mark - Login Actions
 
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser: (PFUser *)user {
     
+    [self shouldLoadMainView];
+}
+
+- (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
+
+    [self shouldLoadMainView];
+}
+
+- (void)shouldLoadMainView {
+    
     BLMainViewController *mainViewController = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
     [self.navigationController pushViewController:mainViewController animated:YES];
     [self dismissViewControllerAnimated:YES completion:NULL];
-    NSLog(@"User has signed in");
 }
+
 
 
 @end
