@@ -9,6 +9,7 @@
 #import "BLWelcomeView.h"
 #import "BLSignUpViewController.h"
 #import "BLMainViewController.h"
+#import "BLAppDelegate.h"
 
 @interface BLWelcomeView ()
 
@@ -29,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Welcome";
 }
 
 - (void)didReceiveMemoryWarning
