@@ -76,5 +76,13 @@
     NSLog(@"User has signed in");
 }
 
+- (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
+    BLMainViewController *mainViewController = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle: nil];
+    [self.navigationController pushViewController:mainViewController animated:YES];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+    NSLog(@"The user has signed up and logged in");
+}
+    
+
 
 @end
