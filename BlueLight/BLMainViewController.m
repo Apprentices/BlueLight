@@ -7,6 +7,8 @@
 //
 
 #import "BLMainViewController.h"
+#import "BLWelcomeView.h"
+#import <Parse/Parse.h>
 
 @interface BLMainViewController ()
 
@@ -33,6 +35,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)logoutButtonTapped:(id)sender {
+    [PFUser logOut];
+    BLWelcomeView *welcomeView = [[BLWelcomeView alloc] initWithNibName:@"BLWelcomeView" bundle:nil];
+    [self.navigationController pushViewController:welcomeView animated:YES];
+
 }
 
 @end
