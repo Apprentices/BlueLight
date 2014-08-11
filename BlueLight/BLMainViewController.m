@@ -1,18 +1,18 @@
 //
-//  BLSignInViewController.m
+//  BLMainViewController.m
 //  BlueLight
 //
 //  Created by DL Admin on 8/7/14.
 //  Copyright (c) 2014 Detroit Labs. All rights reserved.
 //
 
-#import "BLSignInViewController.h"
+#import "BLMainViewController.h"
 
-@interface BLSignInViewController ()
+@interface BLMainViewController ()
 
 @end
 
-@implementation BLSignInViewController
+@implementation BLMainViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

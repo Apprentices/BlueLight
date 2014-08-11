@@ -9,6 +9,7 @@
 #import "BLAppDelegate.h"
 #import "BLWelcomeView.h"
 #import <Parse/Parse.h>
+#import "BLMainViewController.h"
 
 @implementation BLAppDelegate
 
@@ -20,9 +21,22 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    BLWelcomeView *welcomeView = [[BLWelcomeView alloc] initWithNibName:@"BLWelcomeView" bundle:nil];
-    self.navController = [[UINavigationController alloc] initWithRootViewController:welcomeView];
+    
+    if (![PFUser currentUser]) {
+        
+        BLWelcomeView *welcomeView = [[BLWelcomeView alloc] initWithNibName:@"BLWelcomeView" bundle:nil];
+        self.navController = [[UINavigationController alloc] initWithRootViewController:welcomeView];
+        [self.navController setNavigationBarHidden:YES];
+    }
+    
+    else {
+        
+        BLMainViewController *mainView = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
+        self.navController = [[UINavigationController alloc] initWithRootViewController:mainView];
+        [self.navController setNavigationBarHidden:YES];
+        
+    }
+    
     self.window.rootViewController = self.navController;
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -39,7 +53,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

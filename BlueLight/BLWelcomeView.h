@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface BLWelcomeView : UIViewController <PFSignUpViewControllerDelegate>
+@interface BLWelcomeView : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 @end
