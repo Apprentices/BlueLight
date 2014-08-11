@@ -1,5 +1,5 @@
 //
-//  BLSignInViewController.h
+//  BLMainViewController.h
 //  BlueLight
 //
 //  Created by DL Admin on 8/7/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLSignInViewController : UIViewController
+@interface BLMainViewController : UIViewController
 
 @end

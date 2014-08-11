@@ -8,7 +8,8 @@
 
 #import "BLWelcomeView.h"
 #import "BLSignUpViewController.h"
-#import "BLSignInViewController.h"
+#import "BLMainViewController.h"
+#import "BLAppDelegate.h"
 
 @interface BLWelcomeView ()
 
@@ -29,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Welcome";
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,10 +39,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Button Actions
+
 - (IBAction)signInButtonPressed:(id)sender {
     
-    BLSignInViewController *signInViewController = [[BLSignInViewController alloc] initWithNibName:@"BLSignInViewController" bundle:nil];
-    [self.navigationController pushViewController:signInViewController animated:YES];
+    PFLogInViewController *login = [[PFLogInViewController alloc] init];
+    login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton | PFLogInFieldsDismissButton;
+    login.delegate = self;
+    [self presentViewController:login animated:YES
+                     completion:NULL];
     
 }
 
@@ -49,5 +56,16 @@
     BLSignUpViewController *signUpViewController = [[BLSignUpViewController alloc] initWithNibName:@"BLSignUpViewController" bundle:nil];
     [self.navigationController pushViewController:signUpViewController animated:YES];
 }
+
+#pragma mark - Login Actions
+
+- (void)logInViewController:(PFLogInViewController *)logInController didLogInUser: (PFUser *)user {
+    
+    BLMainViewController *mainViewController = [[BLMainViewController alloc] initWithNibName:@"BLMainViewController" bundle:nil];
+    [self.navigationController pushViewController:mainViewController animated:YES];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+    NSLog(@"User has signed in");
+}
+
 
 @end
